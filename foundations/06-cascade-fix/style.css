@@ -1,3 +1,55 @@
+/*
+changes to be made
+- first p
+    class: para
+    - font-weight: extra bold
+    - font-size: bigger than second p
+- second p
+    class: para small-para
+    - font-weight: extra bold
+    - font-size: smaller than first p
+- first button
+    id: confirm-button class: button confirm
+    - font-weight: extra bold
+    - text-color: white
+    - background-color: green
+- Second button
+    id: cancel-button class: button cancel
+    - font-weight: thin
+    text-color: black
+    - background-color: white
+- first div
+    class: text
+    - font-weight: thin
+- second div
+    class: text
+    - font-weight: thin
+- child div of second div
+    class: text child
+    - font-weight: extra bold
+    - font-size: same as second p
+
+Similar styles:
+font-weight: extra bold
+    - first p
+    - second p
+    - first button
+    - child div of second div
+font-weight: thin
+    - second button
+    - fist div
+    - second div
+background-color: green
+    - first button
+font-size: smaller than others
+    - second p
+    - child div of second div
+    
+    You can edit the CSS file by adding, removing, 
+    or editing selectors for a declaration block, 
+    or by moving declaration blocks around.
+*/
+
 body{
   font-family:Arial, Helvetica, sans-serif
 }
@@ -8,7 +60,7 @@ body{
   font-weight: 800;
 }
 
-.small-para {
+.para.small-para {
   font-size: 14px;
   font-weight: 800;
 }
@@ -17,7 +69,7 @@ body{
   font-size: 22px;
 }
 
-.confirm {
+#confirm-button {
   background: green;
   color: white;
   font-weight: bold;
@@ -29,7 +81,7 @@ body{
   font-size: 20px;
 }
 
-.child {
+.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
